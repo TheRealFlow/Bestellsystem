@@ -16,6 +16,5 @@ public class Main {
 
         productRepo.listProducts().add(new Product("4", "Käse"));
         System.out.println(productRepo.listProducts());
-
     }
 }

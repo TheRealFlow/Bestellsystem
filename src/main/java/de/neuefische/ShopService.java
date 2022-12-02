@@ -24,16 +24,12 @@ public class ShopService {
         return orderRepo.addOrder(new Order(id, productsToOrder));
     }
 
-    private Product getProduct(String productId){
+    private Product getProduct(String productId) {
         Optional<Product> optionalProduct = productRepo.getProduct(productId);
         if (optionalProduct.isPresent()) {
             return optionalProduct.get();
         } else {
             throw new IllegalArgumentException("A Product with the ID " + productId + " is not existing");
         }
-    }
-
-    public List<Order> listOrders(){
-        return orderRepo.listOrders();
     }
 }

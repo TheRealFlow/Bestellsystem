@@ -16,10 +16,6 @@ public class OrderRepo {
         return List.copyOf(orders.values());
     }
 
-    public Map<String, Order> getOrders() {
-        return orders;
-    }
-
     public Order addOrder(Order newOrder){
         orders.put(newOrder.getId(), newOrder);
         return newOrder;
