@@ -10,4 +10,8 @@ import java.util.List;
 public class Order {
     private String id;
     private List<Product> productList;
+
+    public List<Product> getProductList() {
+        return productList;
+    }
 }
