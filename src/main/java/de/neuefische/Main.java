@@ -1,5 +1,8 @@
 package de.neuefische;
 
+import de.neuefische.model.Product;
+import de.neuefische.repo.ProductRepo;
+
 import java.util.ArrayList;
 import java.util.List;
 

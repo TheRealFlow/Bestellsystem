@@ -1,5 +1,6 @@
-package de.neuefische;
+package de.neuefische.repo;
 
+import de.neuefische.model.Order;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
